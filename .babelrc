@@ -1,6 +1,10 @@
 {
   "presets": [
+    // 1. Adapta el JavaScript moderno a la versión actual de Node.js donde corren los tests
     ["@babel/preset-env", { "targets": { "node": "current" } }],
+    
+    // 2. Traduce el código JSX a JavaScript estándar. 
+    // "runtime": "automatic" evita tener que escribir "import React from 'react'" en cada archivo
     ["@babel/preset-react", { "runtime": "automatic" }]
   ]
 }
